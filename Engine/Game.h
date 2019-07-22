@@ -36,39 +36,11 @@ private:
 	void UpdateModel();
 	/********************************/
 	/*  User Functions              */
-	void DrawCross(int x, int y, int r, int g, int b);
-	void DrawBox(int x, int y, int r, int g, int b);
-	bool OverLapTest(int box0x, int box0y, int box1x, int box1y);
-	void OutScreenTest(int& x, int& y);
 	/********************************/
 private:
 	MainWindow& wnd;
 	Graphics gfx;
 	/********************************/
 	/*  User Variables              */
-	int x_fixed = 300;
-	int y_fixed = 300;
-	int colorR_fixed = 0;
-	int colorG_fixed = 255;
-	int colorB_fixed = 0;
-	
-	int x_move = 400;
-	int y_move = 400;
-	int colorR_move = 255;
-	int colorG_move = 255;
-	int colorB_move = 255;
-	int colorChangeR_move = 255;
-	int colorChangeG_move = 0;
-	int colorChangeB_move = 0;
-
-	bool isLeftRelease = false;
-	bool isRightRelease = false;
-	bool isUpRelease = false;
-	bool isDownRelease = false;
-
-	int v_x = 0;
-	int v_y = 0;
-
-	bool isCollide = true;
 	/********************************/
 };
